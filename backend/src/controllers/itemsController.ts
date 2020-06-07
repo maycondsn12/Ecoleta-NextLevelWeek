@@ -10,11 +10,11 @@ class ItemsController {
                 id: item.id, 
                 title: item.title,
                 image: `http://localhost:3333/uploads/${item.image}`,
-             }
-        })
+             };
+        });
     
         return res.json(serializedItems);
-    }
+    };
 };
 
 export default ItemsController;
